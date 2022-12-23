@@ -1,0 +1,162 @@
+@import '~antd/es/style/themes/default.less';
+.tableList {
+  .tableListOperator {
+    margin-bottom: 16px;
+    button {
+      margin-right: 8px;
+    }
+  }
+}
+.tableListForm {
+  :global {
+    .ant-form-inline {
+      .ant-form-item {
+        display: flex;
+        margin-right: 0;
+        margin-bottom: 24px;
+        > .ant-form-item-label {
+          width: auto;
+          padding-right: 8px;
+          line-height: 32px;
+        }
+        .ant-form-item-control {
+          line-height: 32px;
+        }
+      }
+    }
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+  .submitButtons {
+    margin-bottom: 24px;
+    white-space: nowrap;
+  }
+}
+.modal {
+  :global {
+    .ant-modal-header {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .ant-modal-body {
+      padding-top: 12px;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-lg) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 8px;
+  }
+}
+.titleIcon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+.setPtcpModalContent {
+  border: 1px solid #ddd;
+  .col {
+    border-right: 1px solid #ddd;
+  }
+}
+.transferBox {
+  height: 400px;
+  overflow: auto;
+}
+.ptcpListItem {
+  padding-left: 8px;
+  cursor: pointer;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear; /* Firefox 4 */
+  -webkit-transition: background-color 0.2s linear; /* Safari 和 Chrome */ /* Opera */
+}
+.selected {
+  background: #eee;
+}
+.nonSelected {
+  background: transparent;
+}
+
+.roleListItem {
+  padding: 0 !important;
+  .roleContent {
+    width: 100% !important;
+  }
+  .roleTitle {
+    padding: 8px;
+    color: #108ee9;
+    font-weight: bold;
+    font-size: 14px;
+    background: #fafafa;
+    border-bottom: 1px solid #e7e7e7;
+    -moz-transition: background-color 0.4s linear;
+    -webkit-transition: background-color 0.4s linear;
+    -o-transition: background-color 0.4s linear;
+    transition: background-color 0.4s linear; /* Firefox 4 */ /* Safari 和 Chrome */ /* Opera */
+  }
+
+  .addible {
+    cursor: pointer;
+  }
+
+  .nonAddible {
+    cursor: not-allowed;
+  }
+
+  .roleTitle:hover {
+    background: #d2e7fa;
+  }
+
+  .noParticipant {
+    margin-bottom: 4px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    color: #ccc;
+  }
+  .participantItem {
+    padding: 5px 10px;
+    .content {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .action {
+      float: right;
+      margin-left: 4px;
+      :hover {
+        color: red;
+      }
+    }
+  }
+  .participantItem:hover {
+    background: #fafafa;
+  }
+}
+
+.controlFull {
+  :global {
+    .ant-form-item-control-wrapper .ant-form-item-control {
+      width: 100%;
+    }
+  }
+}
+
+.foldCard {
+  max-height: 480px;
+  overflow: auto;
+  :global {
+    .ant-card-body {
+      padding: 8px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import '~antd/es/style/themes/default.less';
+
+.formilyArrayTable {
+  :global {
+    .ant-table .ant-row.ant-form-item {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+.formilyComponent {
+  :global {
+    .ant-form-item-label {
+      height: 32px;
+      padding: 0 4px 0 10px;
+      background: #fafafa;
+      border: 1px solid #d9d9d9;
+      border-right: none;
+    }
+    .ant-form-item-control {
+      margin-left: -1px;
+    }
+  }
+}
+
+.listSchema {
+  :global {
+    .mega-layout-container-content.grid {
+      display: grid;
+      flex: 1;
+      grid-row-gap: 20px;
+      grid-column-gap: 20px;
+      grid-template-columns: repeat(6, minmax(190px, 1fr));
+      margin-bottom: 0;
+    }
+
+    .mega-layout-container.ant-form-item {
+      flex-direction: row;
+      margin-bottom: 0 !important;
+    }
+  }
+}

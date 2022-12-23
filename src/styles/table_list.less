@@ -1,0 +1,178 @@
+@import '~antd/es/style/themes/default.less';
+
+.tableListOperator {
+  margin-bottom: 16px;
+  button {
+    margin-right: 8px;
+  }
+}
+.tableAlert {
+  margin-bottom: 16px;
+}
+.extraContentSearch {
+  float: right;
+  max-width: 272px;
+}
+.tableCard {
+  :global {
+    .ant-card-extra {
+      width: 430px;
+    }
+  }
+  .extraContentSearch {
+    float: left;
+  }
+  .Radio {
+    float: right;
+  }
+}
+.tableListForm {
+  :global {
+    .ant-form-item {
+      display: flex;
+      margin-right: 0;
+      margin-bottom: 24px;
+      > .ant-form-item-label {
+        width: auto;
+        padding-right: 8px;
+        line-height: 32px;
+      }
+      .ant-form-item-control {
+        line-height: 32px;
+      }
+    }
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+  .submitButtons {
+    margin-bottom: 24px;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: @screen-lg) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 8px;
+  }
+}
+.iconObjectList {
+  width: 16px;
+  margin-top: -4px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.stateIcon {
+  width: 10px;
+  vertical-align: top;
+}
+// 表格内超出省略号
+.tableEllipsis {
+  :global {
+    .ant-table table {
+      width: 100%;
+      table-layout: fixed;
+    }
+    .ant-table table .ant-table-tbody td {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    // .ant-table table .ant-table-tbody td span {
+    //   display: inline-block;
+    //   width: 100%;
+    //   background: red;
+    // }
+  }
+}
+.tableFirstTdNoPadding {
+  :global {
+    .ant-table-middle
+      > .ant-table-content
+      > .ant-table-body
+      > table
+      > .ant-table-tbody
+      > tr
+      > td:first-child {
+      padding: 12px 4px 0;
+    }
+    .ant-table-middle
+      > .ant-table-content
+      > .ant-table-body
+      > table
+      > .ant-table-tbody
+      > tr
+      > td:first-child
+      span
+      img {
+      display: inline-block;
+      width: 12px;
+      vertical-align: top;
+    }
+  }
+}
+.tableTdNoPadding {
+  :global {
+    .ant-table-middle
+      > .ant-table-content
+      > .ant-table-body
+      > table
+      > .ant-table-tbody
+      > tr
+      > td:nth-child(2) {
+      padding: 12px 4px 0;
+    }
+    .ant-table-middle
+      > .ant-table-content
+      > .ant-table-body
+      > table
+      > .ant-table-tbody
+      > tr
+      > td:first-child {
+      padding: 12px 0;
+    }
+  }
+}
+.tableCellPadding {
+  :global {
+    .ant-table-middle
+      > .ant-table-content
+      > .ant-table-body
+      > table
+      > .ant-table-tbody
+      > tr
+      > td:nth-child(2) {
+      padding: 12px 4px 0;
+    }
+    .ant-table-middle
+      > .ant-table-content
+      > .ant-table-body
+      > table
+      > .ant-table-tbody
+      > tr
+      > td:first-child {
+      padding: 12px 0;
+    }
+    .ant-table-cell {
+      padding: 12px 8px;
+    }
+  }
+}
+.selectBorderRadius {
+  :global {
+    .ant-select-selection {
+      border-right: 0;
+      border-radius: 4px 0 0 4px;
+    }
+    .ant-btn {
+      background-color: rgb(217, 217, 217);
+      border-radius: 0 4px 4px 0;
+    }
+  }
+}

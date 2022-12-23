@@ -1,0 +1,25 @@
+@import '~antd/es/style/themes/default.less';
+
+.hiddenImg {
+  & > div {
+    & > a {
+      display: none;
+    }
+  }
+}
+
+.djs-visual {
+  > rect {
+    > text > tspan {
+      font-size: 14px;
+    }
+  }
+}
+
+.highlight:not(.djs-connection) {
+  .djs-visual {
+    > rect:first-child {
+      fill: #7f7 !important;
+    }
+  }
+}

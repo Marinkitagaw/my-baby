@@ -1,0 +1,112 @@
+@import '~antd/es/style/themes/default.less';
+
+.set-participant-panel {
+  margin-bottom: 24px;
+  border: 1px solid #ccc;
+
+  :global {
+    .ant-card-body {
+      padding: 1px 0 0 0;
+    }
+
+    .ant-layout-sider-children {
+      height: auto;
+    }
+
+    .ant-tree-node-content-wrapper:hover {
+      padding-left: 15px;
+    }
+
+    .ant-tree-treenode-switcher-open,
+    .ant-tree-treenode-switcher-close {
+      padding: 0;
+    }
+
+    .ant-tree-child-tree > li:first-child {
+      padding: 0;
+    }
+  }
+
+  .sider {
+    border-right: 1px solid #ddd;
+  }
+
+  .overflow {
+    height: 300px;
+    overflow: auto;
+  }
+
+  .search {
+    display: inline-block;
+    margin-left: 8px;
+  }
+
+  .userBox {
+    padding-left: 15px;
+    transition: padding-left 0.5s;
+  }
+
+  .userBox:hover {
+    padding-left: 25px;
+    cursor: pointer;
+  }
+
+  .roleBox {
+    transition: background-color 1s;
+  }
+
+  .roleBox:hover {
+    background-color: #eee;
+
+    .roleName {
+      padding-left: 32px;
+    }
+  }
+
+  .a {
+    margin-left: 4px;
+    padding: 3px 6px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: background-color 0.5s, color 0.5s;
+  }
+
+  .a:hover {
+    color: #fff;
+    background-color: #1890ff;
+  }
+
+  .tag {
+    margin-top: 8px;
+  }
+
+  .roleName {
+    padding: 2px 32px 2px 16px;
+    border-bottom: 2px solid #1890ff;
+    transition: padding 0.5s;
+  }
+
+  .stepDescription {
+    position: relative;
+    left: 38px;
+    padding-top: 8px;
+    font-size: 14px;
+    text-align: left;
+
+    > div {
+      margin-top: 8px;
+      margin-bottom: 4px;
+      margin-left: 2px;
+    }
+  }
+
+  .textSecondary {
+    color: @text-color-secondary;
+  }
+
+  @media screen and (max-width: @screen-sm) {
+    .stepDescription {
+      left: 8px;
+    }
+  }
+}

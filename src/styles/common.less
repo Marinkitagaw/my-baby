@@ -1,0 +1,134 @@
+@import '~antd/es/style/themes/default.less';
+.success,
+.warning,
+.error {
+  transition: color 0.3s;
+}
+
+.success {
+  color: @success-color;
+}
+
+.warning {
+  color: @warning-color;
+}
+
+.info {
+  color: @info-color;
+}
+
+.error {
+  color: @error-color;
+}
+.backgroundSucess {
+  background-color: @success-color;
+}
+.backgroundError {
+  background-color: @error-color;
+}
+.backgroundInfo {
+  background-color: @info-color;
+}
+.backgroundWarning {
+  background-color: @warning-color;
+}
+.backgroundInfoColor {
+  background-color: #e6f7ff;
+}
+.iconObjectList {
+  width: 16px;
+  margin-top: -4px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+// 表格内超出省略号
+.tableEllipsis {
+  :global {
+    .ant-table table {
+      width: 100%;
+      table-layout: fixed !important;
+    }
+    .ant-table table .ant-table-tbody td {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
+span.tableEllipsis {
+  display: inline-block;
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+// 无数据时
+.noData {
+  color: @disabled-color;
+  font-size: 16px;
+  line-height: 64px;
+  text-align: center;
+  i {
+    position: relative;
+    top: 3px;
+    margin-right: 16px;
+    font-size: 24px;
+  }
+}
+
+.cursor {
+  color: @info-color;
+  cursor: pointer;
+}
+.disabled {
+  color: @disabled-color;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.disabledHandle {
+  color: rgb(153, 153, 153);
+  cursor: not-allowed;
+}
+a.disabledHandle:hover {
+  color: rgb(153, 153, 153);
+}
+.required::before {
+  display: inline-block;
+  margin-right: 4px;
+  color: rgb(245, 34, 45);
+  font-size: 14px;
+  line-height: 1;
+  content: '*';
+}
+
+.ag-overlay-no-rows-center {
+  position: relative !important;
+  top: 25% !important;
+}
+.ag-root.ag-unselectable.ag-layout-normal {
+  border: 1px solid #bdc3c7 !important;
+  border-bottom: none !important;
+}
+
+.DescriptionsEllipsis {
+  :global {
+    .ant-descriptions-item .ant-descriptions-item-content .ellipsis {
+      display: -webkit-box !important;
+    }
+  }
+}
+
+.fieldsetDetail {
+  margin-bottom: 0 !important;
+  :global {
+    .ant-descriptions-bordered .ant-descriptions-view {
+      table {
+        table-layout: fixed !important;
+      }
+      th.ant-descriptions-item-label {
+        background: #f2f9ff !important;
+      }
+    }
+  }
+}

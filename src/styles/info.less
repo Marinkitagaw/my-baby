@@ -1,0 +1,212 @@
+@import '~antd/es/style/themes/default.less';
+
+.title {
+  margin-bottom: 16px;
+  color: @heading-color;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.status {
+  font-size: 14px;
+}
+
+.headerList {
+  margin-bottom: 4px;
+}
+
+.tabsCard {
+  margin-bottom: 24px;
+  :global {
+    .ant-card-head {
+      padding: 0 16px;
+    }
+  }
+}
+
+.noData {
+  padding: 10px 0;
+  color: @disabled-color;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  i {
+    position: relative;
+    top: 3px;
+    margin-right: 16px;
+    font-size: 24px;
+  }
+}
+
+.heading {
+  color: @heading-color;
+  font-size: 20px;
+}
+
+.stepDescription {
+  position: relative;
+  left: 38px;
+  font-size: 14px;
+  & > div {
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+}
+
+.textSecondary {
+  color: @text-color-secondary;
+}
+
+@media screen and (max-width: @screen-sm) {
+  .stepDescription {
+    left: 8px;
+  }
+}
+.hideBorderTop {
+  :global {
+    .ant-table {
+      :global {
+        table {
+          border-top: 0;
+        }
+      }
+    }
+  }
+}
+.secondContentsTable {
+  :global {
+    .ant-table {
+      border-top: 0;
+    }
+  }
+}
+.iconObjectList {
+  width: 16px;
+  margin-top: -4px;
+  vertical-align: middle;
+}
+// 表格内超出省略号
+.tableEllipsis {
+  :global {
+    .ant-table table {
+      width: 100%;
+      table-layout: fixed;
+    }
+    .ant-table table .ant-table-tbody td {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
+.tableFirstTdNoPadding {
+  :global {
+    .ant-table-middle
+      > .ant-table-content
+      > .ant-table-body
+      > table
+      > .ant-table-tbody
+      > tr
+      > td:first-child {
+      padding: 12px 4px 0;
+    }
+    .ant-table-middle
+      > .ant-table-content
+      > .ant-table-body
+      > table
+      > .ant-table-tbody
+      > tr
+      > td:first-child
+      span
+      img {
+      display: inline-block;
+      width: 12px;
+      vertical-align: top;
+    }
+  }
+}
+.tableTdNoPadding {
+  :global {
+    .ant-table-middle
+      > .ant-table-content
+      > .ant-table-body
+      > table
+      > .ant-table-tbody
+      > tr
+      > td:nth-child(2) {
+      padding: 12px 4px 0;
+    }
+    .ant-table-middle
+      > .ant-table-content
+      > .ant-table-body
+      > table
+      > .ant-table-tbody
+      > tr
+      > td:first-child {
+      padding: 12px 0;
+    }
+    .ant-table-middle
+      > .ant-table-content
+      > .ant-table-body
+      > table
+      > .ant-table-tbody
+      > tr
+      > td:first-child
+      span
+      img {
+      display: inline-block;
+      width: 12px;
+      vertical-align: top;
+    }
+  }
+}
+.basicInfo {
+  .preview {
+    float: left;
+    width: 150px;
+    height: 120px;
+    margin-bottom: 8px;
+    padding: 8px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    img {
+      height: 104px;
+    }
+  }
+  .favourite {
+    clear: both;
+    margin-top: 8 px;
+    color: #666;
+  }
+}
+.changeOrderInfoBOMcard {
+  :global {
+    .ant-card-head {
+      min-height: 46px !important;
+      padding-right: 8px !important;
+    }
+    .ant-card-head-title,
+    .ant-card-extra {
+      padding: 10px 0 !important;
+    }
+    .ant-card-body {
+      padding: 0;
+    }
+    .ag-theme-balham .ag-root {
+      border: 0;
+      border-top: 1px solid #bdc3c7;
+    }
+  }
+}
+.dataTypeCheck {
+  width: 120px !important;
+}
+
+.detail-description-table {
+  :global {
+    .ant-descriptions .ant-descriptions-view table {
+      table-layout: fixed !important;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+// .ant-layout-footer{
+//   background-color: red;
+// }
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+  // background-color: red;
+}
+
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  left: unset;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// Compatible with IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.ant-pro-page-container-children-content {
+  margin: @margin-md;
+}
+
+.ant-pro-basicLayout-content {
+  margin: @margin-md;
+}
+
+.ant-pro-global-footer {
+  margin: 8px;
+}
+
+// .ant-menu-title-content{
+//   background-color: red;
+// // }
+// .ant-menu-item-only-child{
+//   padding-left: 8px;
+//   background-color: red;
+// }
+
+.ant-pro-page-container {
+  margin: -16px -16px 0 !important;
+}
+.ag-root-wrapper, .ag-layout-auto-height, .ag-ltr, .ag-keyboard-focus {
+  border-radius: 4px;
+}
+
+.searchForm {
+  .ant-form-item {
+    margin-bottom: 16px;
+
+    .ant-select {
+      width: 183px;
+    }
+  }
+}
+
+.firstSpecialStyles {
+  font-weight: bold;
+  font-size: 14px;
+}
+.l-table-row-active {
+  color: red;
+}
